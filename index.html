@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/estiloOriginal.css" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <img src="img/Logo.png" class="logo" alt="Logo de Alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="textArea" cols="30" rows="10" placeholder="Escriba su texto aquí"></textarea>
+            <div>
+                <h6 class="imitacion">Su texto no debe contener letras mayúsculas ni acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="botonEncriptar">Encriptar</button>
+                <button class="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="textoEncriptado" cols="20" rows="10" placeholder=""></textarea>
+            <div>
+                <button class="copiarTexto">Copiar texto</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
