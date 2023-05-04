@@ -12,4 +12,102 @@
     width: 10%;
 }
 
-/*min 17 aprox*/
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.textArea {
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+::placeholder {color:#0A3871;}
+
+.textArea:focus {
+    outline: none;
+ }
+
+ .textoEncriptado {
+    background: #FFFFFF;
+    background-image: url(img/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 90px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.textoEncriptado:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 10px;
+}
+
+.botonEncriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.botonDesencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.botonCopiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 401px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+
+.limitacion {
+    color: #495057;
+    opacity: 0.8;
+    /*width: 205px;
+    height: 18px;*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
