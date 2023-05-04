@@ -8,7 +8,19 @@ const mensaje = document.querySelector(".mensaje");
     o --> ober
     u --> ufat
 
-*/
+    function copyText() {
+            
+            //leemos el texto de una area determinada
+            var text = document.getElementById("dummy-text").innerHTML;
+            //En este ejemplo solamente tenemos texto por lo que podríamos usar .innerText
+            //Pero supongamos que tuvieramos algo mas que texto, como bloques de codigo,
+            //entonces sería mejor usar .innerHTML
+
+            //ahora usamos navigator object
+
+            navigator.clipboard.writeText(text);
+
+        } */
 
 function botonEncriptar() {
     const textoEncriptado = encriptar(textArea.value);
@@ -21,6 +33,16 @@ function botonDesencriptar() {
     const textoDesencriptado = desencriptar(textArea.value);
     mensaje.value = textoDesencriptado;
     textArea.value = "";
+}
+
+function botonCopiar() {
+    if (mensaje.value == "") {
+        return;
+    }else{
+        let textoCopiado = mensaje.value;
+        navigator.clipboard.writeText(textoCopiado);
+    }
+    
 }
 
 function encriptar(stringEncriptado){
